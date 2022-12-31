@@ -6,12 +6,12 @@
 <head>
 
     <!-- Meta tags -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>Title</title>    
+    <title>Butazzo Pizza - Restaurant, Cafe, Fast Food business HTML5 Responsive, CSS3 One Page Template</title>
 
     <!-- Stylesheets -->
     <link href="src/assets/css/bootstrap.min.css" type="text/css" rel="stylesheet" media="all" />
@@ -88,13 +88,13 @@
                     </a>
 
                     <!-- Wrapper for slides -->
-                    <div class="carousel-inner" role="listbox">
+                    <div class="carousel-inner">
 
                         <!-- Carousel items   -->
-                        <div class="item active">
+                        <div class="carousel-item active">
                             <div class="carousel-caption">
                                 <div class="fadeUp item_img">
-                                    <img src="src/assets/img/photos/pizza.png" alt="sample" />
+                                    <img src="src/assets/img/placeholder-500x310.png" alt="sample" />
                                     <div class="item_badge">
                                         <span class="badge_btext">20%</span>
                                         <span class="badge_stext">OFF</span>
@@ -110,10 +110,10 @@
                             </div>
                         </div>
 
-                        <div class="item">
+                        <div class="carousel-item">
                             <div class="carousel-caption">
                                 <div class="fadeUp item_img">
-                                    <img src="src/assets/img/photos/pizza.png" alt="sample" />
+                                    <img src="src/assets/img/placeholder-500x310.png" alt="sample" />
                                     <div class="item_badge">
                                         <span class="badge_btext">20%</span>
                                         <span class="badge_stext">OFF</span>
@@ -129,10 +129,10 @@
                             </div>
                         </div>
 
-                        <div class="item">
+                        <div class="carousel-item">
                             <div class="carousel-caption">
                                 <div class="fadeUp item_img">
-                                    <img src="src/assets/img/photos/pizza.png" alt="sample" />
+                                    <img src="src/assets/img/placeholder-500x310.png" alt="sample" />
                                     <div class="item_badge">
                                         <span class="badge_btext">20%</span>
                                         <span class="badge_stext">OFF</span>
@@ -148,10 +148,10 @@
                             </div>
                         </div>
 
-                        <div class="item">
+                        <div class="carousel-item">
                             <div class="carousel-caption">
                                 <div class="fadeUp item_img">
-                                    <img src="src/assets/img/photos/pizza.png" alt="sample" />
+                                    <img src="src/assets/img/placeholder-500x310.png" alt="sample" />
                                     <div class="item_badge">
                                         <span class="badge_btext">20%</span>
                                         <span class="badge_stext">OFF</span>
@@ -167,10 +167,10 @@
                             </div>
                         </div>
 
-                        <div class="item">
+                        <div class="carousel-item">
                             <div class="carousel-caption">
                                 <div class="fadeUp item_img">
-                                    <img src="src/assets/img/photos/pizza.png" alt="sample" />
+                                    <img src="src/assets/img/placeholder-500x310.png" alt="sample" />
                                     <div class="item_badge">
                                         <span class="badge_btext">20%</span>
                                         <span class="badge_stext">OFF</span>
@@ -198,7 +198,7 @@
                 <div class="navbar-container" data-spy="affix" data-offset-top="400">
                     <div class="container">
 
-                        <div class="navbar_top hidden-xs">
+                        <div class="navbar_top d-none d-sm-none d-md-block">
                             <div class="top_addr">
                                 <span><i class="fa fa-map-marker" aria-hidden="true"></i> Your country, your city, 12345</span>
                                 <span><i class="fa fa-phone" aria-hidden="true"></i> 123 456 789</span>
@@ -209,8 +209,8 @@
                             </div>
                             <div id="navbar_search">
                                 <form method="post">
-                                    <input type="text" name="q" class="form-control pull-left" value="" placeholder="Search anything">
-                                    <button type="submit" class="pull-right close" id="search_close"><i class="fa fa-close"></i></button>
+                                    <input type="text" name="q" autocomplete="off" class="form-control pull-left" value="" placeholder="Search anything">
+                                    <button type="button" class="pull-right close" id="search_close"><i class="fa fa-close"></i></button>
                                 </form>
                             </div>
                         </div>
@@ -233,8 +233,9 @@
                                 <div class="collapse navbar-collapse" id="navbar">
                                     <div class="navbar-right">
                                         <ul class="nav navbar-nav">
-                                            <li><a class="page-scroll" href="#header">Home</a></li>
+                                            <li class="active"><a class="page-scroll" href="#header">Home</a></li>
                                             <li><a class="page-scroll" href="#about_us">About</a></li>
+                                            <li><a class="page-scroll" href="#chef">Chef</a></li>
                                             <li><a class="page-scroll" href="#menu">Menus</a></li>
                                             <li><a class="page-scroll" href="#gallery">Gallery</a></li>
                                             <li><a class="page-scroll" href="#reservation">Reservation</a></li>
@@ -259,17 +260,17 @@
 
         <!--    About Us    -->
         <div class="container section" id="about_us">
-            <div class="col-sm-12 d-flex flex-xs-column">
-                <div class="col-sm-6 d-flex align-items-center padd_lr0" data-aos="fade-up">
+            <div class="col-md-12 d-flex flex-xs-column">
+                <div class="col-md-6 d-flex align-items-center padd_lr0" data-aos="fade-up">
                     <div class="content">
                         <h1 class="section-title title_sty1">about us</h1>
                         <p class="short">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                     </div>
                 </div>
-                <div class="col-sm-6 img text-center padd_lr0" data-aos="fade-down">
+                <div class="col-md-6 img text-center padd_lr0" data-aos="fade-down">
                     <div class="border_on">
-                        <img src="src/assets/img/photos/about-us.jpg" alt="sample" class="about_img" />
+                        <img src="src/assets/img/placeholder-555x432.png" alt="sample" class="about_img" />
                     </div>
                 </div>
             </div>
@@ -282,403 +283,476 @@
             </div>
 
             <!--    Menus filter    -->
-            <div class="menu_filter text-center">
-                <ul class="list-unstyled list-inline d-inline-block">
-                    <li class="item">
-                        <a href="javascript:;" class="filter-button" data-filter="burger">Burger</a>
-                    </li>
-                    <li class="item active">
-                        <a href="javascript:;" class="filter-button" data-filter="pizza">Pizza</a>
-                    </li>
-                    <li class="item">
-                        <a href="javascript:;" class="filter-button" data-filter="salad">Salad</a>
-                    </li>
-                    <li class="item">
-                        <a href="javascript:;" class="filter-button" data-filter="frices">Frices</a>
-                    </li>
-                    <li class="item">
-                        <a href="javascript:;" class="filter-button" data-filter="drinks">Drinks</a>
-                    </li>
-                </ul>
-            </div> 
+            <ul class="nav nav-tabs menu_filter" id="myTab" role="tablist">
+                <li class="nav-item item active" role="presentation">
+                  <a class="nav-link active" id="burger-tab" data-toggle="tab" href="#burger" role="tab" aria-controls="burger" aria-selected="true">Burger</a>
+                </li>
+                <li class="nav-item item" role="presentation">
+                  <a class="nav-link" id="pizza-tab" data-toggle="tab" href="#pizza" role="tab" aria-controls="pizza" aria-selected="false">Pizza</a>
+                </li>
+                <li class="nav-item item" role="presentation">
+                  <a class="nav-link" id="salad-tab" data-toggle="tab" href="#salad" role="tab" aria-controls="salad" aria-selected="false">Salad</a>
+                </li>
+                <li class="nav-item item" role="presentation">
+                  <a class="nav-link" id="soup-tab" data-toggle="tab" href="#soup" role="tab" aria-controls="soup" aria-selected="false">Soup</a>
+                </li>
+                <li class="nav-item item" role="presentation">
+                  <a class="nav-link" id="drinks-tab" data-toggle="tab" href="#drinks" role="tab" aria-controls="drinks" aria-selected="false">Drinks</a>
+                </li>
+            </ul>
+
 
             <!--    Menus items     -->
-            <div id="menu_items">
-
-                <div class="filtr-item image filter burger">
+            <div class="tab-content" id="menu_items">
+                <div class="tab-pane fade in active" id="burger" role="tabpanel" aria-labelledby="burger-tab">
                     <div class="row">
-                        <div class="col-sm-6">
-                            <a href="src/assets/img/photos/food-1.jpg" class="block fancybox" data-fancybox-group="fancybox">
+                        <div class="col-md-6">
+                            <a href="src/assets/img/placeholder-900x575.png" class="block fancybox">
                                 <div class="content">
                                     <div class="filter_item_img">
                                         <i class="fa fa-search-plus"></i>
-                                        <img src="src/assets/img/photos/food-1.jpg" alt="sample" />
+                                        <img src="src/assets/img/placeholder-136x136.png" alt="sample" />
                                     </div>
                                     <div class="info">
-                                        <div class="name">Margherita</div>
-                                        <div class="short">Classic marinara sauce, authentic pepperoni,</div>
-                                        <span class="filter_item_price">$10.00</span>
+                                        <div class="name">Beef Burger</div>
+                                        <div class="short">Stack your buns with cheese, bacon, lettuce and more.</div>
+                                        <span class="filter_item_price">$12.95</span>
                                     </div>
                                 </div>
                             </a>
                         </div>
-                        <div class="col-sm-6">
-                            <a href="src/assets/img/photos/food-2.jpg" class="block fancybox" data-fancybox-group="fancybox">
+                        <div class="col-md-6">
+                            <a href="src/assets/img/placeholder-900x575.png" class="block fancybox">
                                 <div class="content">
                                     <div class="filter_item_img">
                                         <i class="fa fa-search-plus"></i>
-                                        <img src="src/assets/img/photos/food-2.jpg" alt="sample" />
+                                        <img src="src/assets/img/placeholder-136x136.png" alt="sample" />
                                     </div>
                                     <div class="info">
-                                        <div class="name">Demo Project Name</div>
-                                        <div class="short">Graphic Design category</div>
-                                        <span class="filter_item_price">$10.00</span>
+                                        <div class="name">Bison Burger</div>
+                                        <div class="short">In a large bowl, combine bison, Worcestershire sauce, shallot, garlic, salt, pepper, coriander, and ground mustard.</div>
+                                        <span class="filter_item_price">$13.50</span>
                                     </div>
                                 </div>
                             </a>
                         </div>
-                        <div class="col-sm-6">
-                            <a href="src/assets/img/photos/food-3.jpg" class="block fancybox" data-fancybox-group="fancybox">
+                        <div class="col-md-6">
+                            <a href="src/assets/img/placeholder-900x575.png" class="block fancybox">
                                 <div class="content">
                                     <div class="filter_item_img">
                                         <i class="fa fa-search-plus"></i>
-                                        <img src="src/assets/img/photos/food-3.jpg" alt="sample" />
+                                        <img src="src/assets/img/placeholder-136x136.png" alt="sample" />
                                     </div>
                                     <div class="info">
-                                        <div class="name">Demo Project Name</div>
-                                        <div class="short">Graphic Design category</div>
-                                        <span class="filter_item_price">$10.00</span>
+                                        <div class="name">Black Bean Burger</div>
+                                        <div class="short">Spiced up with chili sauce, cumin, garlic and chili powder</div>
+                                        <span class="filter_item_price">$9.27</span>
                                     </div>
                                 </div>
                             </a>
                         </div>
-                        <div class="col-sm-6">
-                            <a href="src/assets/img/photos/food-4.jpg" class="block fancybox" data-fancybox-group="fancybox">
+                        <div class="col-md-6">
+                            <a href="src/assets/img/placeholder-900x575.png" class="block fancybox">
                                 <div class="content">
                                     <div class="filter_item_img">
                                         <i class="fa fa-search-plus"></i>
-                                        <img src="src/assets/img/photos/food-4.jpg" alt="sample" />
+                                        <img src="src/assets/img/placeholder-136x136.png" alt="sample" />
                                     </div>
                                     <div class="info">
-                                        <div class="name">Demo Project Name</div>
-                                        <div class="short">Graphic Design category</div>
-                                        <span class="filter_item_price">$10.00</span>
+                                        <div class="name">Elk Burger</div>
+                                        <div class="short">Ground elk meat, red onion, cayenne pepper, black pepper</div>
+                                        <span class="filter_item_price">$18.90</span>
                                     </div>
                                 </div>
                             </a>
                         </div>
-                        <div class="col-sm-6">
-                            <a href="src/assets/img/photos/food-5.jpg" class="block fancybox" data-fancybox-group="fancybox">
+                        <div class="col-md-6">
+                            <a href="src/assets/img/placeholder-900x575.png" class="block fancybox">
                                 <div class="content">
                                     <div class="filter_item_img">
                                         <i class="fa fa-search-plus"></i>
-                                        <img src="src/assets/img/photos/food-5.jpg" alt="sample" />
+                                        <img src="src/assets/img/placeholder-136x136.png" alt="sample" />
                                     </div>
                                     <div class="info">
-                                        <div class="name">Demo Project Name</div>
-                                        <div class="short">Graphic Design category</div>
-                                        <span class="filter_item_price">$10.00</span>
+                                        <div class="name">Veggie Burger</div>
+                                        <div class="short">Black beans, brown rice, mushrooms, tomato paste, smoked paprika</div>
+                                        <span class="filter_item_price">$8.99</span>
                                     </div>
                                 </div>
                             </a>
                         </div>
-                        <div class="col-sm-6">
-                            <a href="src/assets/img/photos/food-6.jpg" class="block fancybox" data-fancybox-group="fancybox">
+                        <div class="col-md-6">
+                            <a href="src/assets/img/placeholder-900x575.png" class="block fancybox">
                                 <div class="content">
                                     <div class="filter_item_img">
                                         <i class="fa fa-search-plus"></i>
-                                        <img src="src/assets/img/photos/food-6.jpg" alt="sample" />
+                                        <img src="src/assets/img/placeholder-136x136.png" alt="sample" />
                                     </div>
                                     <div class="info">
-                                        <div class="name">Demo Project Name</div>
-                                        <div class="short">Graphic Design category</div>
-                                        <span class="filter_item_price">$10.00</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-sm-6">
-                            <a href="src/assets/img/photos/food-7.jpg" class="block fancybox" data-fancybox-group="fancybox">
-                                <div class="content">
-                                    <div class="filter_item_img">
-                                        <i class="fa fa-search-plus"></i>
-                                        <img src="src/assets/img/photos/food-7.jpg" alt="sample" />
-                                    </div>
-                                    <div class="info">
-                                        <div class="name">Demo Project Name</div>
-                                        <div class="short">Graphic Design category</div>
-                                        <span class="filter_item_price">$10.00</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-sm-6">
-                            <a href="src/assets/img/photos/food-8.jpg" class="block fancybox" data-fancybox-group="fancybox">
-                                <div class="content">
-                                    <div class="filter_item_img">
-                                        <i class="fa fa-search-plus"></i>
-                                        <img src="src/assets/img/photos/food-8.jpg" alt="sample" />
-                                    </div>
-                                    <div class="info">
-                                        <div class="name">Demo Project Name</div>
-                                        <div class="short">Graphic Design category</div>
-                                        <span class="filter_item_price">$10.00</span>
+                                        <div class="name">Wild Salmon Burger</div>
+                                        <div class="short">Bread crumbs, lemon, dijon mustard, capers, olive oil</div>
+                                        <span class="filter_item_price">$14.28</span>
                                     </div>
                                 </div>
                             </a>
                         </div>
                     </div>
                 </div>
-                <div class="filtr-item image filter pizza active">
+                <div class="tab-pane fade" id="pizza" role="tabpanel" aria-labelledby="pizza-tab">
                     <div class="row">
-                        <div class="col-sm-6">
-                            <a href="src/assets/img/photos/food-1.jpg" class="block fancybox" data-fancybox-group="fancybox">
+                        <div class="col-md-6">
+                            <a href="src/assets/img/placeholder-900x575.png" class="block fancybox">
                                 <div class="content">
                                     <div class="filter_item_img">
                                         <i class="fa fa-search-plus"></i>
-                                        <img src="src/assets/img/photos/food-1.jpg" alt="sample" />
+                                        <img src="src/assets/img/placeholder-136x136.png" alt="sample" />
+                                    </div>
+                                    <div class="info">
+                                        <div class="name">Chicken Tikka</div>
+                                        <div class="short">Boneless chicken breast, mini pizza, tomato sauce, heavy cream, garam masala</div>
+                                        <span class="filter_item_price">$8.25</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-6">
+                            <a href="src/assets/img/placeholder-900x575.png" class="block fancybox">
+                                <div class="content">
+                                    <div class="filter_item_img">
+                                        <i class="fa fa-search-plus"></i>
+                                        <img src="src/assets/img/placeholder-136x136.png" alt="sample" />
+                                    </div>
+                                    <div class="info">
+                                        <div class="name">Pizza Hawaii</div>
+                                        <div class="short">Canadian bacon, homemade pizza crust, pizza sauce, mozzarella cheese, pineapple chunks</div>
+                                        <span class="filter_item_price">$13.62</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-6">
+                            <a href="src/assets/img/placeholder-900x575.png" class="block fancybox">
+                                <div class="content">
+                                    <div class="filter_item_img">
+                                        <i class="fa fa-search-plus"></i>
+                                        <img src="src/assets/img/placeholder-136x136.png" alt="sample" />
+                                    </div>
+                                    <div class="info">
+                                        <div class="name">Pizza Kebab</div>
+                                        <div class="short">Ground lamb, red wine, pizza dough, feta cheese, mozzarella cheese</div>
+                                        <span class="filter_item_price">$15.25</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-6">
+                            <a href="src/assets/img/placeholder-900x575.png" class="block fancybox">
+                                <div class="content">
+                                    <div class="filter_item_img">
+                                        <i class="fa fa-search-plus"></i>
+                                        <img src="src/assets/img/placeholder-136x136.png" alt="sample" />
                                     </div>
                                     <div class="info">
                                         <div class="name">Margherita</div>
-                                        <div class="short">Classic marinara sauce, authentic pepperoni,</div>
-                                        <span class="filter_item_price">$10.00</span>
+                                        <div class="short">San marzano, fresh mozzarella cheese, red pepper flakes, olive oil, saf instant yeast</div>
+                                        <span class="filter_item_price">$13.34</span>
                                     </div>
                                 </div>
                             </a>
                         </div>
-                        <div class="col-sm-6">
-                            <a href="src/assets/img/photos/food-2.jpg" class="block fancybox" data-fancybox-group="fancybox">
+                        <div class="col-md-6">
+                            <a href="src/assets/img/placeholder-900x575.png" class="block fancybox">
                                 <div class="content">
                                     <div class="filter_item_img">
                                         <i class="fa fa-search-plus"></i>
-                                        <img src="src/assets/img/photos/food-2.jpg" alt="sample" />
+                                        <img src="src/assets/img/placeholder-136x136.png" alt="sample" />
                                     </div>
                                     <div class="info">
-                                        <div class="name">Demo Project Name</div>
-                                        <div class="short">Graphic Design category</div>
-                                        <span class="filter_item_price">$10.00</span>
+                                        <div class="name">Pizza Mushroom</div>
+                                        <div class="short">Fresh tomatoes, fresh yeast, bread flour, black olives, mozzarella cheese</div>
+                                        <span class="filter_item_price">$12.99</span>
                                     </div>
                                 </div>
                             </a>
                         </div>
-                        <div class="col-sm-6">
-                            <a href="src/assets/img/photos/food-3.jpg" class="block fancybox" data-fancybox-group="fancybox">
+                        <div class="col-md-6">
+                            <a href="src/assets/img/placeholder-900x575.png" class="block fancybox">
                                 <div class="content">
                                     <div class="filter_item_img">
                                         <i class="fa fa-search-plus"></i>
-                                        <img src="src/assets/img/photos/food-3.jpg" alt="sample" />
+                                        <img src="src/assets/img/placeholder-136x136.png" alt="sample" />
                                     </div>
                                     <div class="info">
-                                        <div class="name">Demo Project Name</div>
-                                        <div class="short">Graphic Design category</div>
-                                        <span class="filter_item_price">$10.00</span>
+                                        <div class="name">Neapolitan</div>
+                                        <div class="short">Homemade pizza dough, fresh mozzarella cheese, semolina flour, easy pizza sauce, basil leaves</div>
+                                        <span class="filter_item_price">$11.00</span>
                                     </div>
                                 </div>
                             </a>
                         </div>
-                        <div class="col-sm-6">
-                            <a href="src/assets/img/photos/food-4.jpg" class="block fancybox" data-fancybox-group="fancybox">
+                        <div class="col-md-6">
+                            <a href="src/assets/img/placeholder-900x575.png" class="block fancybox">
                                 <div class="content">
                                     <div class="filter_item_img">
                                         <i class="fa fa-search-plus"></i>
-                                        <img src="src/assets/img/photos/food-4.jpg" alt="sample" />
+                                        <img src="src/assets/img/placeholder-136x136.png" alt="sample" />
                                     </div>
                                     <div class="info">
-                                        <div class="name">Demo Project Name</div>
-                                        <div class="short">Graphic Design category</div>
-                                        <span class="filter_item_price">$10.00</span>
+                                        <div class="name">Pepperoni</div>
+                                        <div class="short">Pizza dough, tomato sauce, pepperoni, honey, pizza sauce</div>
+                                        <span class="filter_item_price">$6.99</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-6">
+                            <a href="src/assets/img/placeholder-900x575.png" class="block fancybox">
+                                <div class="content">
+                                    <div class="filter_item_img">
+                                        <i class="fa fa-search-plus"></i>
+                                        <img src="src/assets/img/placeholder-136x136.png" alt="sample" />
+                                    </div>
+                                    <div class="info">
+                                        <div class="name">Pizza Veggie</div>
+                                        <div class="short">Crescent rolls, cream cheese, sour cream, ranch dressing mix, dried dill weed</div>
+                                        <span class="filter_item_price">$5.99</span>
                                     </div>
                                 </div>
                             </a>
                         </div>
                     </div>
                 </div>
-                <div class="filtr-item image filter frices">
+                <div class="tab-pane fade" id="salad" role="tabpanel" aria-labelledby="salad-tab">
                     <div class="row">
-                        <div class="col-sm-6">
-                            <a href="src/assets/img/photos/food-1.jpg" class="block fancybox" data-fancybox-group="fancybox">
+                        <div class="col-md-6">
+                            <a href="src/assets/img/placeholder-900x575.png" class="block fancybox">
                                 <div class="content">
                                     <div class="filter_item_img">
                                         <i class="fa fa-search-plus"></i>
-                                        <img src="src/assets/img/photos/food-1.jpg" alt="sample" />
+                                        <img src="src/assets/img/placeholder-136x136.png" alt="sample" />
                                     </div>
                                     <div class="info">
-                                        <div class="name">Margherita</div>
-                                        <div class="short">Classic marinara sauce, authentic pepperoni,</div>
-                                        <span class="filter_item_price">$10.00</span>
+                                        <div class="name">Ambrosia</div>
+                                        <div class="short">Mandarin oranges, vanilla greek yogurt, maraschino cherries, heavy cream, green grapes</div>
+                                        <span class="filter_item_price">$18.00</span>
                                     </div>
                                 </div>
                             </a>
                         </div>
-                        <div class="col-sm-6">
-                            <a href="src/assets/img/photos/food-2.jpg" class="block fancybox" data-fancybox-group="fancybox">
+                        <div class="col-md-6">
+                            <a href="src/assets/img/placeholder-900x575.png" class="block fancybox">
                                 <div class="content">
                                     <div class="filter_item_img">
                                         <i class="fa fa-search-plus"></i>
-                                        <img src="src/assets/img/photos/food-2.jpg" alt="sample" />
+                                        <img src="src/assets/img/placeholder-136x136.png" alt="sample" />
                                     </div>
                                     <div class="info">
-                                        <div class="name">Demo Project Name</div>
-                                        <div class="short">Graphic Design category</div>
-                                        <span class="filter_item_price">$10.00</span>
+                                        <div class="name">Bound Salad</div>
+                                        <div class="short">Deep fried tofu, Fried egg, Shredded cabbage, Shredded carrot, Chopped green onion</div>
+                                        <span class="filter_item_price">$12.49</span>
                                     </div>
                                 </div>
                             </a>
                         </div>
-                        <div class="col-sm-6">
-                            <a href="src/assets/img/photos/food-3.jpg" class="block fancybox" data-fancybox-group="fancybox">
+                        <div class="col-md-6">
+                            <a href="src/assets/img/placeholder-900x575.png" class="block fancybox">
                                 <div class="content">
                                     <div class="filter_item_img">
                                         <i class="fa fa-search-plus"></i>
-                                        <img src="src/assets/img/photos/food-3.jpg" alt="sample" />
+                                        <img src="src/assets/img/placeholder-136x136.png" alt="sample" />
                                     </div>
                                     <div class="info">
-                                        <div class="name">Demo Project Name</div>
-                                        <div class="short">Graphic Design category</div>
-                                        <span class="filter_item_price">$10.00</span>
+                                        <div class="name">Fruit Salad</div>
+                                        <div class="short">Pineapple, orange juice, apples, strawberries, oranges together</div>
+                                        <span class="filter_item_price">$17.62</span>
                                     </div>
                                 </div>
                             </a>
                         </div>
-                        <div class="col-sm-6">
-                            <a href="src/assets/img/photos/food-4.jpg" class="block fancybox" data-fancybox-group="fancybox">
+                        <div class="col-md-6">
+                            <a href="src/assets/img/placeholder-900x575.png" class="block fancybox">
                                 <div class="content">
                                     <div class="filter_item_img">
                                         <i class="fa fa-search-plus"></i>
-                                        <img src="src/assets/img/photos/food-4.jpg" alt="sample" />
+                                        <img src="src/assets/img/placeholder-136x136.png" alt="sample" />
                                     </div>
                                     <div class="info">
-                                        <div class="name">Demo Project Name</div>
-                                        <div class="short">Graphic Design category</div>
-                                        <span class="filter_item_price">$10.00</span>
+                                        <div class="name">Garden Salad</div>
+                                        <div class="short">Miracle whip, white wine vinegar, black olives, parmesan cheese, red onion</div>
+                                        <span class="filter_item_price">$9.99</span>
                                     </div>
                                 </div>
                             </a>
                         </div>
                     </div>
                 </div>
-                <div class="filtr-item image filter salad">
+                <div class="tab-pane fade" id="soup" role="tabpanel" aria-labelledby="soup-tab">
                     <div class="row">
-                        <div class="col-sm-6">
-                            <a href="src/assets/img/photos/food-1.jpg" class="block fancybox" data-fancybox-group="fancybox">
+                        <div class="col-md-6">
+                            <a href="src/assets/img/placeholder-900x575.png" class="block fancybox">
                                 <div class="content">
                                     <div class="filter_item_img">
                                         <i class="fa fa-search-plus"></i>
-                                        <img src="src/assets/img/photos/food-1.jpg" alt="sample" />
+                                        <img src="src/assets/img/placeholder-136x136.png" alt="sample" />
                                     </div>
                                     <div class="info">
-                                        <div class="name">Margherita</div>
-                                        <div class="short">Classic marinara sauce, authentic pepperoni,</div>
-                                        <span class="filter_item_price">$10.00</span>
+                                        <div class="name">Chicken Noodle</div>
+                                        <div class="short">Uncooked egg noodles, ribs, rotisserie chicken, carrots, olive oil</div>
+                                        <span class="filter_item_price">$6.88</span>
                                     </div>
                                 </div>
                             </a>
                         </div>
-                        <div class="col-sm-6">
-                            <a href="src/assets/img/photos/food-2.jpg" class="block fancybox" data-fancybox-group="fancybox">
+                        <div class="col-md-6">
+                            <a href="src/assets/img/placeholder-900x575.png" class="block fancybox">
                                 <div class="content">
                                     <div class="filter_item_img">
                                         <i class="fa fa-search-plus"></i>
-                                        <img src="src/assets/img/photos/food-2.jpg" alt="sample" />
+                                        <img src="src/assets/img/placeholder-136x136.png" alt="sample" />
                                     </div>
                                     <div class="info">
-                                        <div class="name">Demo Project Name</div>
-                                        <div class="short">Graphic Design category</div>
-                                        <span class="filter_item_price">$10.00</span>
+                                        <div class="name">Puree of Carrot</div>
+                                        <div class="short">White wine, carrots, garlic, vegetable broth, russet potato</div>
+                                        <span class="filter_item_price">7.12</span>
                                     </div>
                                 </div>
                             </a>
                         </div>
-                        <div class="col-sm-6">
-                            <a href="src/assets/img/photos/food-3.jpg" class="block fancybox" data-fancybox-group="fancybox">
+                        <div class="col-md-6">
+                            <a href="src/assets/img/placeholder-900x575.png" class="block fancybox">
                                 <div class="content">
                                     <div class="filter_item_img">
                                         <i class="fa fa-search-plus"></i>
-                                        <img src="src/assets/img/photos/food-3.jpg" alt="sample" />
+                                        <img src="src/assets/img/placeholder-136x136.png" alt="sample" />
                                     </div>
                                     <div class="info">
-                                        <div class="name">Demo Project Name</div>
-                                        <div class="short">Graphic Design category</div>
-                                        <span class="filter_item_price">$10.00</span>
+                                        <div class="name">Seafood Bisque</div>
+                                        <div class="short">White wine, heavy cream, tomato paste, lobster stock, worcestershire sauce</div>
+                                        <span class="filter_item_price">$14.95</span>
                                     </div>
                                 </div>
                             </a>
                         </div>
-                        <div class="col-sm-6">
-                            <a href="src/assets/img/photos/food-4.jpg" class="block fancybox" data-fancybox-group="fancybox">
+                        <div class="col-md-6">
+                            <a href="src/assets/img/placeholder-900x575.png" class="block fancybox">
                                 <div class="content">
                                     <div class="filter_item_img">
                                         <i class="fa fa-search-plus"></i>
-                                        <img src="src/assets/img/photos/food-4.jpg" alt="sample" />
+                                        <img src="src/assets/img/placeholder-136x136.png" alt="sample" />
                                     </div>
                                     <div class="info">
-                                        <div class="name">Demo Project Name</div>
-                                        <div class="short">Graphic Design category</div>
-                                        <span class="filter_item_price">$10.00</span>
+                                        <div class="name">Veloute Tomato</div>
+                                        <div class="short">Greek yogurt, potato, tomato paste, diced tomatoes, carrot</div>
+                                        <span class="filter_item_price">$6.93</span>
                                     </div>
                                 </div>
                             </a>
                         </div>
                     </div>
                 </div>
-                <div class="filtr-item image filter drinks">
+                <div class="tab-pane fade" id="drinks" role="tabpanel" aria-labelledby="drinks-tab">
                     <div class="row">
-                        <div class="col-sm-6">
-                            <a href="src/assets/img/photos/food-1.jpg" class="block fancybox" data-fancybox-group="fancybox">
+                        <div class="col-md-6">
+                            <a href="src/assets/img/placeholder-900x575.png" class="block fancybox">
                                 <div class="content">
                                     <div class="filter_item_img">
                                         <i class="fa fa-search-plus"></i>
-                                        <img src="src/assets/img/photos/food-1.jpg" alt="sample" />
+                                        <img src="src/assets/img/placeholder-136x136.png" alt="sample" />
                                     </div>
                                     <div class="info">
-                                        <div class="name">Margherita</div>
-                                        <div class="short">Classic marinara sauce, authentic pepperoni,</div>
-                                        <span class="filter_item_price">$10.00</span>
+                                        <div class="name">Americano</div>
+                                        <div class="short">Club soda, orange, sweet vermouth, campari</div>
+                                        <span class="filter_item_price">$20.00</span>
                                     </div>
                                 </div>
                             </a>
                         </div>
-                        <div class="col-sm-6">
-                            <a href="src/assets/img/photos/food-2.jpg" class="block fancybox" data-fancybox-group="fancybox">
+                        <div class="col-md-6">
+                            <a href="src/assets/img/placeholder-900x575.png" class="block fancybox">
                                 <div class="content">
                                     <div class="filter_item_img">
                                         <i class="fa fa-search-plus"></i>
-                                        <img src="src/assets/img/photos/food-2.jpg" alt="sample" />
+                                        <img src="src/assets/img/placeholder-136x136.png" alt="sample" />
                                     </div>
                                     <div class="info">
-                                        <div class="name">Demo Project Name</div>
-                                        <div class="short">Graphic Design category</div>
-                                        <span class="filter_item_price">$10.00</span>
+                                        <div class="name">Cosmopolitan</div>
+                                        <div class="short">Cranberry juice, triple sec, lemon vodka, ice, orange zest</div>
+                                        <span class="filter_item_price">$14.99</span>
                                     </div>
                                 </div>
                             </a>
                         </div>
-                        <div class="col-sm-6">
-                            <a href="src/assets/img/photos/food-3.jpg" class="block fancybox" data-fancybox-group="fancybox">
+                        <div class="col-md-6">
+                            <a href="src/assets/img/placeholder-900x575.png" class="block fancybox">
                                 <div class="content">
                                     <div class="filter_item_img">
                                         <i class="fa fa-search-plus"></i>
-                                        <img src="src/assets/img/photos/food-3.jpg" alt="sample" />
+                                        <img src="src/assets/img/placeholder-136x136.png" alt="sample" />
                                     </div>
                                     <div class="info">
-                                        <div class="name">Demo Project Name</div>
-                                        <div class="short">Graphic Design category</div>
-                                        <span class="filter_item_price">$10.00</span>
+                                        <div class="name">Malibu Sunset</div>
+                                        <div class="short">Malibu rum, pineapple juice, maraschino cherries, make</div>
+                                        <span class="filter_item_price">$12.48</span>
                                     </div>
                                 </div>
                             </a>
                         </div>
-                        <div class="col-sm-6">
-                            <a href="src/assets/img/photos/food-4.jpg" class="block fancybox" data-fancybox-group="fancybox">
+                        <div class="col-md-6">
+                            <a href="src/assets/img/placeholder-900x575.png" class="block fancybox">
                                 <div class="content">
                                     <div class="filter_item_img">
                                         <i class="fa fa-search-plus"></i>
-                                        <img src="src/assets/img/photos/food-4.jpg" alt="sample" />
+                                        <img src="src/assets/img/placeholder-136x136.png" alt="sample" />
                                     </div>
                                     <div class="info">
-                                        <div class="name">Demo Project Name</div>
-                                        <div class="short">Graphic Design category</div>
-                                        <span class="filter_item_price">$10.00</span>
+                                        <div class="name">Sweet Poison</div>
+                                        <div class="short">Coconut rum, pineapple juice, blue curacao, luxardo cherries, gold rum</div>
+                                        <span class="filter_item_price">$10.24</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-6">
+                            <a href="src/assets/img/placeholder-900x575.png" class="block fancybox">
+                                <div class="content">
+                                    <div class="filter_item_img">
+                                        <i class="fa fa-search-plus"></i>
+                                        <img src="src/assets/img/placeholder-136x136.png" alt="sample" />
+                                    </div>
+                                    <div class="info">
+                                        <div class="name">Tropical Garden</div>
+                                        <div class="short">Grand marnier, vodka, tropical, cane sugar syrup</div>
+                                        <span class="filter_item_price">$9.89</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-6">
+                            <a href="src/assets/img/placeholder-900x575.png" class="block fancybox">
+                                <div class="content">
+                                    <div class="filter_item_img">
+                                        <i class="fa fa-search-plus"></i>
+                                        <img src="src/assets/img/placeholder-136x136.png" alt="sample" />
+                                    </div>
+                                    <div class="info">
+                                        <div class="name">Green Tea</div>
+                                        <div class="short">Green tea is a type of tea that is made from Camellia sinensis leaves</div>
+                                        <span class="filter_item_price">$6.11</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-6">
+                            <a href="src/assets/img/placeholder-900x575.png" class="block fancybox">
+                                <div class="content">
+                                    <div class="filter_item_img">
+                                        <i class="fa fa-search-plus"></i>
+                                        <img src="src/assets/img/placeholder-136x136.png" alt="sample" />
+                                    </div>
+                                    <div class="info">
+                                        <div class="name">Spicy Ginger Lemon Tea</div>
+                                        <div class="short">Lemon, honey, ginger, cayenne pepper</div>
+                                        <span class="filter_item_price">$9.99</span>
                                     </div>
                                 </div>
                             </a>
@@ -689,57 +763,196 @@
                 <div class="text-center">
                     <!-- BEGIN pagination -->
                     <ul class="pagination">
-                        <li class="active"><a href="">1</a></li>
-                        <li><a href="">2</a></li>
-                        <li><a href="">3</a></li>
-                        <li><a href="">4</a></li>
+                        <li class="active"><a href="javascript:;">1</a></li>
+                        <li><a href="javascript:;">2</a></li>
+                        <li><a href="javascript:;">3</a></li>
+                        <li><a href="javascript:;">4</a></li>
                     </ul>
                     <!-- END pagination -->
                 </div>
+            </div>
+        </div>
 
+        <!--    Our Chef    -->
+        <div class="container section" id="chef" data-aos="fade-up">
+            <div class="title-block">
+                <h1 class="section-title">Our Chef</h1>
+            </div>
+            <div id="chef-slider">
+                <div class="chef-item">
+                    <div class="chef-image">
+                        <img src="src/assets/img/placeholder-354x484.png" alt="sample" />
+                    </div>
+                    <div class="chef-info">
+                        <h3 class="chef-name">Margaret Loe Chef</h3>
+                        <div class="chef-social">
+                            <a href="" class="chef-social-item">
+                                <i class="fa fa-facebook"></i>
+                            </a>
+                            <a href="" class="chef-social-item">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                            <a href="" class="chef-social-item">
+                                <i class="fa fa-linkedin"></i>
+                            </a>
+                            <a href="" class="chef-social-item">
+                                <i class="fa fa-google-plus"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="chef-item">
+                    <div class="chef-image">
+                        <img src="src/assets/img/placeholder-354x484.png" alt="sample" />
+                    </div>
+                    <div class="chef-info">
+                        <h3 class="chef-name">Margaret Loe Chef</h3>
+                        <div class="chef-social">
+                            <a href="" class="chef-social-item">
+                                <i class="fa fa-facebook"></i>
+                            </a>
+                            <a href="" class="chef-social-item">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                            <a href="" class="chef-social-item">
+                                <i class="fa fa-linkedin"></i>
+                            </a>
+                            <a href="" class="chef-social-item">
+                                <i class="fa fa-google-plus"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="chef-item">
+                    <div class="chef-image">
+                        <img src="src/assets/img/placeholder-354x484.png" alt="sample" />
+                    </div>
+                    <div class="chef-info">
+                        <h3 class="chef-name">Margaret Loe Chef</h3>
+                        <div class="chef-social">
+                            <a href="" class="chef-social-item">
+                                <i class="fa fa-facebook"></i>
+                            </a>
+                            <a href="" class="chef-social-item">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                            <a href="" class="chef-social-item">
+                                <i class="fa fa-linkedin"></i>
+                            </a>
+                            <a href="" class="chef-social-item">
+                                <i class="fa fa-google-plus"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="chef-item">
+                    <div class="chef-image">
+                        <img src="src/assets/img/placeholder-354x484.png" alt="sample" />
+                    </div>
+                    <div class="chef-info">
+                        <h3 class="chef-name">Margaret Loe Chef</h3>
+                        <div class="chef-social">
+                            <a href="" class="chef-social-item">
+                                <i class="fa fa-facebook"></i>
+                            </a>
+                            <a href="" class="chef-social-item">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                            <a href="" class="chef-social-item">
+                                <i class="fa fa-linkedin"></i>
+                            </a>
+                            <a href="" class="chef-social-item">
+                                <i class="fa fa-google-plus"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="chef-item">
+                    <div class="chef-image">
+                        <img src="src/assets/img/placeholder-354x484.png" alt="sample" />
+                    </div>
+                    <div class="chef-info">
+                        <h3 class="chef-name">Margaret Loe Chef</h3>
+                        <div class="chef-social">
+                            <a href="" class="chef-social-item">
+                                <i class="fa fa-facebook"></i>
+                            </a>
+                            <a href="" class="chef-social-item">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                            <a href="" class="chef-social-item">
+                                <i class="fa fa-linkedin"></i>
+                            </a>
+                            <a href="" class="chef-social-item">
+                                <i class="fa fa-google-plus"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="chef-item">
+                    <div class="chef-image">
+                        <img src="src/assets/img/placeholder-354x484.png" alt="sample" />
+                    </div>
+                    <div class="chef-info">
+                        <h3 class="chef-name">Margaret Loe Chef</h3>
+                        <div class="chef-social">
+                            <a href="" class="chef-social-item">
+                                <i class="fa fa-facebook"></i>
+                            </a>
+                            <a href="" class="chef-social-item">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                            <a href="" class="chef-social-item">
+                                <i class="fa fa-linkedin"></i>
+                            </a>
+                            <a href="" class="chef-social-item">
+                                <i class="fa fa-google-plus"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
         <!--    Reservation    -->
-
         <div class="fixed_layer section" id="reservation">
             <div class="fixed_layer_padd container">
                 <div class="row">
-                    <div class="col-md-offset-6 col-md-6" data-aos="fade-down">
+                    <div class="offset-lg-6 col-lg-6" data-aos="fade-down">
                         <div class="reserv_box">
                             <h1 class="section-title title_sty1">online reservation</h1>
                             <p class="short">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
                             <form id="reserv_form" method="post">
                                 <div class="row">
-                                    <div class="col-sm-6">
+                                    <div class="col-md-6">
                                         <div class="form-group form_pos">
-                                            <input type="text" name="name" required="" placeholder="Your name" class="form-control" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your name'" />
+                                            <input type="text" name="name" autocomplete="off" required="" placeholder="Your name" class="form-control" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your name'" />
                                             <span class="form_icon"></span>
                                         </div>
                                     </div>
-                                    <div class="col-sm-6">
+                                    <div class="col-md-6">
                                         <div class="form-group form_pos">
-                                            <input type="email" name="email" required="" placeholder="Your email" class="form-control" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your email'" />
+                                            <input type="email" name="email" autocomplete="off" required="" placeholder="Your email" class="form-control" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your email'" />
                                             <span class="form_icon"></span>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="col-sm-4">
+                                    <div class="col-md-4">
                                         <div class="form-group form_pos">
-                                            <input type="text" name="phone" required="" placeholder="Phone" class="form-control" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Phone'" />
+                                            <input type="text" name="phone" autocomplete="off" required="" placeholder="Phone" class="form-control" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Phone'" />
                                             <span class="form_icon"></span>
                                         </div>
                                     </div>
-                                    <div class="col-sm-4">
+                                    <div class="col-md-4">
                                         <div class="form-group form_pos">
-                                            <input type="text" name="date" required="" placeholder="Date" class="form-control" id="reserv_date" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Date'" />
+                                            <input type="text" name="date" autocomplete="off" required="" placeholder="Date" class="form-control" id="reserv_date" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Date'" />
                                             <span class="form_icon"></span>
                                         </div>
                                     </div>
-                                    <div class="col-sm-4">
+                                    <div class="col-md-4">
                                         <div class="form-group form_pos">
-                                            <input type="text" name="time" required="" placeholder="Time" class="form-control" id="reserv_time" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Time'" />
+                                            <input type="text" name="time" autocomplete="off" required="" placeholder="Time" class="form-control" id="reserv_time" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Time'" />
                                             <span class="form_icon"></span>
                                         </div>
                                     </div>
@@ -761,82 +974,82 @@
             <div class="title-block">
                 <h1 class="section-title">Gallery</h1>
             </div>
-            <div id="photo_gallery">
+            <div id="photo_gallery" class="list1">
                 <div class="row">
-                    <div class="col-sm-3">
-                        <a href="src/assets/img/photos/gallery-1.jpg" class="block fancybox" data-fancybox-group="fancybox">
+                    <div class="col-md-4 col-lg-3 item">
+                        <a href="src/assets/img/placeholder-1280x853.png" class="block fancybox" data-fancybox-group="fancybox">
                             <div class="content">
-                                <img src="src/assets/img/photos/gallery-1.jpg" alt="sample" />
+                                <img src="src/assets/img/placeholder-285x277.png" alt="sample" />
                                 <div class="zoom">
                                     <span class="zoom_icon"><i class="fa fa-search-plus"></i></span>
                                 </div>
                             </div>
                         </a>
                     </div>
-                    <div class="col-sm-3">
-                        <a href="src/assets/img/photos/gallery-2.jpg" class="block fancybox" data-fancybox-group="fancybox">
+                    <div class="col-md-4 col-lg-3 item">
+                        <a href="src/assets/img/placeholder-1280x853.png" class="block fancybox" data-fancybox-group="fancybox">
                             <div class="content">
-                                <img src="src/assets/img/photos/gallery-2.jpg" alt="sample" />
+                                <img src="src/assets/img/placeholder-285x277.png" alt="sample" />
                                 <div class="zoom">
                                     <span class="zoom_icon"><i class="fa fa-search-plus"></i></span>
                                 </div>
                             </div>
                         </a>
                     </div>
-                    <div class="col-sm-3">
-                        <a href="src/assets/img/photos/gallery-3.jpg" class="block fancybox" data-fancybox-group="fancybox">
+                    <div class="col-md-4 col-lg-3 item">
+                        <a href="src/assets/img/placeholder-1280x853.png" class="block fancybox" data-fancybox-group="fancybox">
                             <div class="content">
-                                <img src="src/assets/img/photos/gallery-3.jpg" alt="sample" />
+                                <img src="src/assets/img/placeholder-285x277.png" alt="sample" />
                                 <div class="zoom">
                                     <span class="zoom_icon"><i class="fa fa-search-plus"></i></span>
                                 </div>
                             </div>
                         </a>
                     </div>
-                    <div class="col-sm-3">
-                        <a href="src/assets/img/photos/gallery-4.jpg" class="block fancybox" data-fancybox-group="fancybox">
+                    <div class="col-md-4 col-lg-3 item">
+                        <a href="src/assets/img/placeholder-1280x853.png" class="block fancybox" data-fancybox-group="fancybox">
                             <div class="content">
-                                <img src="src/assets/img/photos/gallery-4.jpg" alt="sample" />
+                                <img src="src/assets/img/placeholder-285x277.png" alt="sample" />
                                 <div class="zoom">
                                     <span class="zoom_icon"><i class="fa fa-search-plus"></i></span>
                                 </div>
                             </div>
                         </a>
                     </div>
-                    <div class="col-sm-3">
-                        <a href="src/assets/img/photos/gallery-5.jpg" class="block fancybox" data-fancybox-group="fancybox">
+                    <div class="col-md-4 col-lg-3 item">
+                        <a href="src/assets/img/placeholder-1280x853.png" class="block fancybox" data-fancybox-group="fancybox">
                             <div class="content">
-                                <img src="src/assets/img/photos/gallery-5.jpg" alt="sample" />
+                                <img src="src/assets/img/placeholder-285x277.png" alt="sample" />
                                 <div class="zoom">
                                     <span class="zoom_icon"><i class="fa fa-search-plus"></i></span>
                                 </div>
                             </div>
                         </a>
                     </div>
-                    <div class="col-sm-3">
-                        <a href="src/assets/img/photos/gallery-6.jpg" class="block fancybox" data-fancybox-group="fancybox">
+                    <div class="col-md-4 col-lg-3 item">
+                        <a href="src/assets/img/placeholder-1280x853.png" class="block fancybox" data-fancybox-group="fancybox">
                             <div class="content">
-                                <img src="src/assets/img/photos/gallery-6.jpg" alt="sample" />
+                                <img src="src/assets/img/placeholder-285x277.png" alt="sample" />
                                 <div class="zoom">
                                     <span class="zoom_icon"><i class="fa fa-search-plus"></i></span>
                                 </div>
                             </div>
                         </a>
                     </div>
-                    <div class="col-sm-3">
-                        <a href="src/assets/img/photos/gallery-7.jpg" class="block fancybox" data-fancybox-group="fancybox">
+                    <div class="col-md-4 col-lg-3 item">
+                        <a href="src/assets/img/placeholder-1280x853.png" class="block fancybox" data-fancybox-group="fancybox">
                             <div class="content">
-                                <img src="src/assets/img/photos/gallery-7.jpg" alt="sample" />
+                                <img src="src/assets/img/placeholder-285x277.png" alt="sample" />
                                 <div class="zoom">
                                     <span class="zoom_icon"><i class="fa fa-search-plus"></i></span>
                                 </div>
                             </div>
                         </a>
                     </div>
-                    <div class="col-sm-3">
-                        <a href="src/assets/img/photos/gallery-8.jpg" class="block fancybox" data-fancybox-group="fancybox">
+                    <div class="col-md-4 col-lg-3 item">
+                        <a href="src/assets/img/placeholder-1280x853.png" class="block fancybox" data-fancybox-group="fancybox">
                             <div class="content">
-                                <img src="src/assets/img/photos/gallery-8.jpg" alt="sample" />
+                                <img src="src/assets/img/placeholder-285x277.png" alt="sample" />
                                 <div class="zoom">
                                     <span class="zoom_icon"><i class="fa fa-search-plus"></i></span>
                                 </div>
@@ -844,34 +1057,92 @@
                         </a>
                     </div>
                 </div>
+                <div class="row" id="loadMore">
+                    <div class="col-md-4 col-lg-3 item">
+                        <a href="src/assets/img/placeholder-1280x853.png" class="block fancybox" data-fancybox-group="fancybox">
+                            <div class="content">
+                                <img src="src/assets/img/placeholder-285x277.png" alt="sample" />
+                                <div class="zoom">
+                                    <span class="zoom_icon"><i class="fa fa-search-plus"></i></span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4 col-lg-3 item">
+                        <a href="src/assets/img/placeholder-1280x853.png" class="block fancybox" data-fancybox-group="fancybox">
+                            <div class="content">
+                                <img src="src/assets/img/placeholder-285x277.png" alt="sample" />
+                                <div class="zoom">
+                                    <span class="zoom_icon"><i class="fa fa-search-plus"></i></span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4 col-lg-3 item">
+                        <a href="src/assets/img/placeholder-1280x853.png" class="block fancybox" data-fancybox-group="fancybox">
+                            <div class="content">
+                                <img src="src/assets/img/placeholder-285x277.png" alt="sample" />
+                                <div class="zoom">
+                                    <span class="zoom_icon"><i class="fa fa-search-plus"></i></span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4 col-lg-3 item">
+                        <a href="src/assets/img/placeholder-1280x853.png" class="block fancybox" data-fancybox-group="fancybox">
+                            <div class="content">
+                                <img src="src/assets/img/placeholder-285x277.png" alt="sample" />
+                                <div class="zoom">
+                                    <span class="zoom_icon"><i class="fa fa-search-plus"></i></span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="load-dots">
+                    <div class="spinner">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
                 <div class="text-center">
-                    <a href="" title="" class="more_btn">
+                    <button class="btn-view more_btn btn-load-more">
                         <i class="fa fa-refresh"></i>
                         <span>more images</span>
-                    </a>
+                    </button>
                 </div>
             </div>
         </div>
 
         <!-- End Sections -->
 
+        <!-- Start .scroll-up -->
+        <div class="scroll-up">
+            <div class="scroll-up__icon">
+                <i class="fa fa-arrow-up"></i>
+            </div>
+        </div><!-- End /.scroll-up -->
+
         <!--  Begin Footer  -->
         <footer id="footer">
 
             <!--    Contact    -->
 
-            <!--    Google map, Social links    -->
+            <!--    Yandex map, Social links    -->
             <div class="section" id="contact">
-                <div id="googleMap"></div> 
+                <div id="map"></div>
                 <div class="footer_pos">
                     <div class="container">
                         <div class="footer_content">
                             <div class="row">
-                                <div class="col-sm-6 col-md-4">
+                                <div class="col-md-6 col-lg-4">
                                     <h4 class="footer_ttl footer_ttl_padd">about us</h4>
                                     <p class="footer_txt">Lorem Ipsum is simply dummy text of the printing and typesetting industry. It has survived not only five centuries but also the leap into electronic typesetting. </p>
                                 </div>
-                                <div class="col-sm-6 col-md-5">
+                                <div class="col-md-6 col-lg-5">
                                     <h4 class="footer_ttl footer_ttl_padd">working hours</h4>
                                     <div class="footer_border">
                                         <div class="week_row clearfix">
@@ -931,7 +1202,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-sm-12 col-md-3">
+                                <div class="col-md-12 col-lg-3">
                                     <h4 class="footer_ttl footer_ttl_padd">contact us</h4>
                                     <div class="footer_border">
                                         <div class="footer_cnt">
@@ -944,7 +1215,7 @@
                                         </div>
                                         <div class="footer_cnt">
                                             <i class="fa fa-envelope"></i>
-                                            <span>info@butapizza.net</span>
+                                            <span>info@butazzopizza.net</span>
                                         </div>
                                     </div>
                                 </div>
@@ -954,12 +1225,12 @@
                     <div class="copyright">
                         <div class="container">
                             <div class="row">
-                                <div class="col-md-8">
+                                <div class="col-lg-8">
                                     <div class="copy_text">
                                         Copyright © 2018 Agency <span>|</span> All Rights Reserved
                                     </div>
                                 </div>
-                                <div class="col-md-4">
+                                <div class="col-lg-4">
                                     <div class="social-links">
                                         <ul class="list-inline">
                                             <li class="list-inline-item">
@@ -1008,13 +1279,14 @@
         </div>
         <div class="right_menu_search">
             <form method="post">
-                <input type="text" name="q" class="form-control search_input" value="" placeholder="Search anything">
+                <input type="text" name="q" autocomplete="off" class="form-control search_input" value="" placeholder="Search anything">
                 <button type="submit" class="search_icon"><i class="fa fa-search"></i></button>
             </form>
         </div>
         <ul class="rmenu_list">
             <li><a class="page-scroll" href="#header">Home</a></li>
             <li><a class="page-scroll" href="#about_us">About</a></li>
+            <li><a class="page-scroll" href="#chef">Chef</a></li>
             <li><a class="page-scroll" href="#menu">Menus</a></li>
             <li><a class="page-scroll" href="#gallery">Gallery</a></li>
             <li><a class="page-scroll" href="#reservation">Reservation</a></li>
@@ -1029,6 +1301,7 @@
 
     <div class="cd-overlay"></div>
     <!-- /.cd-overlay -->
+         
 
     <!-- END mobile right burger menu -->
 
@@ -1045,43 +1318,9 @@
     <script src="src/assets/js/bootstrap-datepicker.js"></script>
     <script src="src/assets/js/bootstrap-datetimepicker.js"></script>
     <script src="src/assets/js/jquery.fancybox.js"></script>
+    <script src="src/assets/js/loadMoreResults.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=pdct.1.1.20181030T175834Z.133bc6bb41576943.2897484581a2a12fea17740a34279c270c29ac48&lang=en_US"></script>
     <script src="src/assets/js/main.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBcg5Y2D1fpGI12T8wcbtPIsyGdw-_NV1Y&callback=myMap"></script>
-    <script>
-        // Datepicker
-        $(document).ready(function() {
-            $('#reserv_date').datepicker();
-        });
-
-        $(document).ready(function() {
-            $('#reserv_time').datetimepicker({
-                format: 'LT'
-            });
-        });
-    </script>
-    <script>
-        jQuery(document).ready(function($) {
-            $('.fancybox')
-                .fancybox({                     
-                beforeShow: function () {
-                    if (this.title) {
-                        // New line
-                        this.title += '<br />';
-                    }
-                },
-                afterShow: function () {
-                },  
-                helpers: {
-                    title: {
-                        type: 'inside'
-                    }, //<-- add a comma to separate the following option
-                    buttons: {} //<-- add this for buttons
-                },
-                closeBtn: true, // you will use the buttons now
-                arrows: true
-            });  
-        });            
-    </script>    
 
 </body>
 

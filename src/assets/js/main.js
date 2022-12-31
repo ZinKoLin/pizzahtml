@@ -1,9 +1,67 @@
+/*********************************************************************************
+
+	Version: 1.4
+
+    Note: This is scripts js. All custom scripts here.
+
+**********************************************************************************/
+
+/*===============================================================================
+
+    [ INDEX ]
+	|
+    |___ Affix Navbar fixed on scroll
+    |___ loadMoreResults
+    |___ Touch Swipe mobile menu
+    |___ Loading overlay
+    |___ Carousel Slider filter
+	|___ Search panel
+	|___ AOS Animate
+	|___ Swipe Carousel slider
+	|___ Datepicker
+	|___ Fancybox
+	|___ ScrollUp
+	|___ Slick slider
+	|___ Init Yandex Map
+	|___
+    |
+	[END INDEX ]
+
+================================================================================*/
+
+
 "use strict";
 
 $(document).ready(function() {
 
-    //======= START Touch Swipe mobile menu ========
+    //======= START Affix Navbar fixed on scroll ========
 
+    $(window).on('scroll', function (event) {
+        var scrollValue = $(window).scrollTop();
+        if (scrollValue > 85) {
+            $('.navbar-container').addClass('affix');
+        } else{
+            $('.navbar-container').removeClass('affix');
+        }
+    });
+
+    //======= END Affix Navbar fixed on scroll ========
+
+    //======= START jQuery loadMoreResults ========
+
+    $(".btn-load-more").click(function(){
+        $(".load-dots").addClass('visible'); 
+        $(".btn-load-more").hide();   
+        setTimeout(function(){
+            $("#loadMore").show().css("display","flex");
+            $(".load-dots").removeClass('visible');     
+        }, 5000);
+    });
+    
+    //======= END jQuery loadMoreResults ========
+
+
+    //======= START Touch Swipe mobile menu ========
 
     //open left menu clicking the left menu icon
     $('.left_menu_icon').on('click', function(event){
@@ -55,39 +113,14 @@ $(document).ready(function() {
     //======= START Carousel slider ========
 
     $('.carousel').carousel({
-      arrows: true
+      arrows: true,
+      interval: 5000,
     })
 
     //======= END Carousel slider ========
 
 
-
-    //======= START Menu filter ========
-
-	$(document).on('click', '.filter-button', function(){
-
-		$(".filter-button").closest('li').removeClass("active")
-		$(this).closest('li').addClass("active");
-
-        var value = $(this).attr('data-filter');
-        
-        if(value === "active")
-        {
-            $('.filter').show('1000');
-        }
-        else
-        {
-            $(".filter").not('.'+value).hide('3000');
-            $('.filter').filter('.'+value).show('3000');
-            
-        }
-    });
-
-    //======= END Menu filter ========
-
-
     //======= START Search panel ========
-
 
     // Hide search panel
     function hideNavbarSearch() {
@@ -104,7 +137,8 @@ $(document).ready(function() {
 
     // Trigger hideNavbarSearch() when click close button on search panel
     $(document).on('click', '#search_close', function () {
-        hideNavbarSearch()
+        hideNavbarSearch();
+        $('#navbar_search').find('.form-control').val('');
     })
 
     // Trigger hideNavbarSearch() when press ESC
@@ -114,12 +148,10 @@ $(document).ready(function() {
         }
     });
 
-
     //======= END Search panel ========
 
 
     //======= START AOS Animate ========
-
 
     // Init AOS Animate On Scroll Library
     AOS.init({
@@ -128,9 +160,7 @@ $(document).ready(function() {
         once: true,
     });
 
-
     //======= END AOS Animate ========
-
 
 
     //======= START Swipe Carousel slider ========
@@ -148,38 +178,143 @@ $(document).ready(function() {
 
     });
 
-
     //======= END Swipe Carousel slider ========
 
 });
 
-    //======= START Init Google Map ========
 
+    //======= START Datepicker ========
 
-function myMap() {
-
-    var iconBase = 'src/assets/img/map-marker.png';
-
-    var mapProp= {
-        center:new google.maps.LatLng(51.508742,-0.120850),
-        zoom:10,
-        icon: iconBase,
-          zoomControlOptions: {
-              position: google.maps.ControlPosition.RIGHT_CENTER
-          },
-          streetViewControlOptions: {
-              position: google.maps.ControlPosition.RIGHT_CENTER
-          },
-    };
-
-    var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
-
-    var marker = new google.maps.Marker({
-        position: mapProp.center,
-        map: map,
-        icon: iconBase
+    $(document).ready(function() {
+        $('#reserv_date').datepicker();
     });
 
-}
+    $(document).ready(function() {
+        $('#reserv_time').datetimepicker({
+            format: 'LT'
+        });
+    });
 
-    //======= END Init Google Map ========
+    //======= END Datepicker ========
+
+
+    //======= START Fancybox ========
+
+    $('[data-fancybox]').fancybox({
+        protect: true
+    });
+
+    jQuery(document).ready(function($) {
+        $('.fancybox')
+            .fancybox({                     
+            beforeShow: function () {
+                if (this.title) {
+                    // New line
+                    this.title += '<br />';
+                }
+            },
+            afterShow: function () {
+            },  
+            helpers: {
+                title: {
+                    type: 'inside'
+                }, //<-- add a comma to separate the following option
+                buttons: {} //<-- add this for buttons
+            },
+            closeBtn: true, // you will use the buttons now
+            arrows: true
+        });  
+    });   
+
+    //======= END Fancybox ========
+
+
+    //======= START ScrollUp ========
+
+	$(document).on( 'scroll', function(){
+		if ($(window).scrollTop() > 400) {
+			$('.scroll-up').addClass('show');
+		} else {
+			$('.scroll-up').removeClass('show');
+		}
+	});
+
+	$('.scroll-up').on('click', scrollToTop);
+	 
+	function scrollToTop() {
+		var verticalOffset = typeof(verticalOffset) != 'undefined' ? verticalOffset : 0,
+		element = $('body'),
+		offset = element.offset(),
+		offsetTop = offset.top;
+		$('html, body').animate({scrollTop: offsetTop}, 500, 'linear');
+    }
+
+    //======= END ScrollUp ========
+
+
+    //======= START Slick slider ========
+
+    $('#chef-slider').slick({
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        autoplay: false,
+        infinite: false,
+        draggable: true,
+        dots: true,
+        arrows: false,
+        responsive: [
+            {
+                breakpoint: 992,
+                 settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                }
+            },
+            {
+                breakpoint: 600,
+                 settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                }
+            }
+        ]
+    });
+
+    //======= END Slick slider ========
+
+
+    //======= START Init Yandex Map ========
+
+    ymaps.ready(init);
+    var myMap, 
+        myPlacemark;
+
+    var iconBase = 'src/assets/img/map-marker.png';
+    
+    function init(){ 
+        myMap = new ymaps.Map("map", {
+            center: [40.372488, 49.954121],
+            zoom: 13,
+    });
+    
+    myPlacemark = new ymaps.Placemark([40.372488, 49.954121], { 
+        // hintContent: 'Moscow!', 
+        // balloonContent: 'Capital of Russia'
+    },{
+        iconLayout: 'default#image',
+        iconImageHref: 'src/assets/img/map-marker.png',
+        iconImageSize: [26, 40],
+    });
+        
+        myMap.geoObjects.add(myPlacemark);
+        // myMap.controls.remove('zoomControl');
+        myMap.controls.remove('rulerControl');
+        myMap.controls.remove('geolocationControl');
+        myMap.controls.remove('searchControl');
+        myMap.controls.remove('trafficControl');
+        myMap.controls.remove('typeSelector');
+        myMap.controls.remove('fullscreenControl');
+        myMap.behaviors.disable('scrollZoom');
+    }
+
+    //======= END Init Yandex Map ========
